@@ -164,7 +164,8 @@ $menu-height: 70px;
 
 .header-container {
 	background-color: #333;
-	@include retina-image("header", 2560px 700px, jpg);
+	background-image: url("header.jpg");
+	background-size: 2560px 700px;
 	// background-size: cover;
 	// background-size: center center;
 	background-position: 45% center;
@@ -184,7 +185,7 @@ $menu-height: 70px;
 			}
 
 			.play {
-				@include retina-image("play-hover", 121px 121px);
+				@include retina-image("play-hover", 121px 121px, png, "play-hover@2x");
 			}
 		}
 	}
@@ -205,7 +206,7 @@ $menu-height: 70px;
 		}
 
 		.play {
-			@include retina-image("play", 121px 121px);
+			@include retina-image("play", 121px 121px, png, "play@2x");
 			@include transition (all 0.3s ease-in-out);
 			display: block;
 			float: left;
@@ -215,7 +216,7 @@ $menu-height: 70px;
 		}
 
 		.play-hover {
-			@include retina-image("play-hover", 121px 121px);
+			@include retina-image("play-hover", 121px 121px, png, "play-hover@2x");
 		}
 			
 
@@ -404,7 +405,7 @@ $menu-height: 70px;
 		}
 
 		.download {
-			@include retina-image("appstore", 176px 59px);
+			@include retina-image("appstore", 176px 59px, png, "appstore@2x");
 			@include transition(all 0.3s ease-in-out);
 			display: block;
 			height: 59px;
@@ -412,7 +413,7 @@ $menu-height: 70px;
 		}
 
 		.download:hover, .appstore-hover {
-			@include retina-image("appstore-hover", 176px 59px);
+			@include retina-image("appstore-hover", 176px 59px, png, "appsore-hover@2x");
 		}
 
 		.android {
@@ -677,9 +678,9 @@ $menu-height: 70px;
 		padding: 23px 0;
 		text-align: center;
 
-		&.twitter { @include retina-image("twitter", 39px 33px) }
-		&.facebook { @include retina-image("facebook", 24px 41px) }
-		&.email { @include retina-image("email", 39px 36px) }
+		&.twitter { @include retina-image("twitter", 39px 33px, png, "twitter@2x") }
+		&.facebook { @include retina-image("facebook", 24px 41px, png, "facebook@2x") }
+		&.email { @include retina-image("email", 39px 36px, png, "email@2x") }
 	}
 
 	.row {
@@ -974,7 +975,7 @@ $menu-height: 70px;
 			}
 
 			.play {
-				@include retina-image("play-hover", 121px 121px);
+				@include retina-image("play-hover", 121px 121px, png, "play-hover");
 			}
 		}
 
