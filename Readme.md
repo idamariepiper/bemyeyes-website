@@ -6,10 +6,6 @@ The website is build using [Hammer for Mac](http://hammerformac.com/). In order 
 
 Builds can be viewed by opening the ``index.html`` in the ``Build`` folder or by install [Anvil for Mac](http://anvilformac.com/) to host the site locally. Anvil provides the increased benefit of adding [xip.io](http://xip.io/) support so your site can be browsed by other devices on your network.
 
-## How to deploy
-
-Any pushes to the ``production`` branch of this repository are automatically deployed to S3 by [Forge](https://getforge.com/) where the site is hosted. PLEASE PLEASE make an optimized build in Hammer and commit it before pushing to production. This will greatly decrease the size of the hosted files and the speed of the website.
-
 ## Collaboration
 
 We are using [Waffle](https://waffle.io/bemyeyes/bemyeyes-website) to manage Github issues. It has two-way sync by adding and removing tags like:
