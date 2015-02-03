@@ -413,7 +413,7 @@ $menu-height: 70px;
 		}
 
 		.download:hover, .appstore-hover {
-			@include retina-image("appstore-hover", 176px 59px, png, "appsore-hover@2x");
+			@include retina-image("appstore-hover", 176px 59px, png, "appstore-hover@2x");
 		}
 
 		.android {
