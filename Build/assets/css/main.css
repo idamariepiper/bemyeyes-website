@@ -1381,3 +1381,12 @@ p {
 @media screen and (max-width: 320px) {
   .header .header-text h2 {
     font-size: 18pt; } }
+@media screen and (max-height: 569px) {
+  .menu-container {
+    height: 70px; }
+
+  .menu .aside {
+    display: none !important; }
+
+  .header-container {
+    margin-top: -70px; } }
