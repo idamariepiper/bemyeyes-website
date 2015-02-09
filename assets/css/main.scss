@@ -1106,8 +1106,22 @@ $menu-height: 70px;
 		margin-top: 0;
 	}
 
-	.features, .testemonials {
+	.features {
 		margin-top: 30px;
+	}
+
+	.testemonials-container {
+		margin: -100px 0 -60px;
+
+		.picture {
+			float: none;
+			margin: 0 auto 10px auto;
+		}
+		
+		.quote {
+			font-size: 16pt;
+			line-height: 24pt;
+		}
 	}
 
 	.share {
