@@ -972,9 +972,16 @@ p {
     line-height: 22pt;
     margin-top: 0;
     text-align: center; }
+  .testemonials blockquote {
+    margin: 0; }
   .testemonials .quote {
     font-size: 20pt;
-    line-height: 26pt; }
+    line-height: 26pt;
+    margin-top: 0; }
+    .testemonials .quote cite {
+      display: block;
+      font-size: 16pt;
+      font-style: italic; }
   .testemonials .picture {
     background-color: #f4f3f2;
     border-radius: 60px;

@@ -612,9 +612,20 @@ $menu-height: 70px;
 		text-align: center;
 	}
 
+	blockquote {
+		margin: 0;
+	}
+
 	.quote {
 		font-size: 20pt;
 		line-height: 26pt;
+		margin-top: 0;
+
+		cite {
+			display: block;
+			font-size: 16pt;
+			font-style: italic;
+		}		
 	}
 
 	.picture {
