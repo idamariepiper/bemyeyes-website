@@ -1166,3 +1166,17 @@ $menu-height: 70px;
 		}
 	}
 }
+
+
+@include media(max-height 569px) {
+	// Hide logo for iPhone 5 or shorter screens
+	.menu-container {	
+		height: 70px;
+	}
+	.menu .aside {		
+		display: none !important;
+	}
+	.header-container {
+		margin-top: -70px
+	}
+}
