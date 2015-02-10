@@ -1126,6 +1126,12 @@ $menu-height: 70px;
 	}
 }
 
+@include media(max-width 370px) {
+	.header div.stats .stat .value {
+		font-size: 18pt;
+	}
+}
+
 @include media(max-width 320px) {
 	.header {
 		.header-text {
