@@ -996,33 +996,33 @@ p {
       height: auto;
       width: 100% !important; }
 
-.social {
+.social, .help {
   margin-bottom: 40px; }
-  .social .block {
+  .social .block, .help .block {
     background-color: #f4f3f2;
     display: block; }
-  .social .wide {
+  .social .wide, .help .wide {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     height: 143px;
     padding: 23px 21px; }
-    .social .wide:last-child {
+    .social .wide:last-child, .help .wide:last-child {
       margin-right: 0; }
-    .social .wide:nth-child(even) {
+    .social .wide:nth-child(even), .help .wide:nth-child(even) {
       margin-right: 0; }
-    .social .wide .icon {
+    .social .wide .icon, .help .wide .icon {
       margin-right: 21px; }
-    .social .wide h4 {
+    .social .wide h4, .help .wide h4 {
       margin-top: 5px; }
-    .social .wide a {
+    .social .wide a, .help .wide a {
       color: #3c8eb3;
       font-weight: 500;
       text-decoration: underline; }
-      .social .wide a:hover {
+      .social .wide a:hover, .help .wide a:hover {
         color: #20222b; }
-  .social .narrow {
+  .social .narrow, .help .narrow {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -1033,50 +1033,50 @@ p {
     font-weight: bold;
     padding: 23px 0;
     text-align: center; }
-    .social .narrow:last-child {
+    .social .narrow:last-child, .help .narrow:last-child {
       margin-right: 0; }
-    .social .narrow:nth-child(3n) {
+    .social .narrow:nth-child(3n), .help .narrow:nth-child(3n) {
       margin-right: 0; }
-    .social .narrow.twitter {
+    .social .narrow.twitter, .help .narrow.twitter {
       background-image: url(../images/twitter.png); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .social .narrow.twitter {
+        .social .narrow.twitter, .help .narrow.twitter {
           background-image: url(../images/twitter@2x.png);
           background-size: 39px 33px; } }
-    .social .narrow.facebook {
+    .social .narrow.facebook, .help .narrow.facebook {
       background-image: url(../images/facebook.png); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .social .narrow.facebook {
+        .social .narrow.facebook, .help .narrow.facebook {
           background-image: url(../images/facebook@2x.png);
           background-size: 24px 41px; } }
-    .social .narrow.email {
+    .social .narrow.email, .help .narrow.email {
       background-image: url(../images/email.png); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .social .narrow.email {
+        .social .narrow.email, .help .narrow.email {
           background-image: url(../images/email@2x.png);
           background-size: 39px 36px; } }
-  .social .row {
+  .social .row, .help .row {
     *zoom: 1;
     display: block;
     margin-bottom: 20px; }
-    .social .row:before, .social .row:after {
+    .social .row:before, .social .row:after, .help .row:before, .help .row:after {
       content: " ";
       display: table; }
-    .social .row:after {
+    .social .row:after, .help .row:after {
       clear: both; }
-  .social .icon {
+  .social .icon, .help .icon {
     float: left;
     margin-bottom: 60px; }
-  .social h4 {
+  .social h4, .help h4 {
     font-size: 15pt;
     margin: 0; }
-  .social p {
+  .social p, .help p {
     font-size: 12pt;
     line-height: 18pt;
     margin-top: 5px; }
-  .social p, .social span, .social h4, .social a {
+  .social p, .social span, .social h4, .social a, .help p, .help span, .help h4, .help a {
     color: #20222b; }
-  .social br {
+  .social br, .help br {
     display: none; }
 
 .footer-container {
@@ -1119,6 +1119,89 @@ p {
   .footer .bsection img {
     max-width: 100% !important; }
 
+.help .narrow {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .help .narrow:last-child {
+    margin-right: 0; }
+.help .wide {
+  padding-top: 35px;
+  height: auto;
+  min-height: 150px; }
+.help br {
+  display: inline-block; }
+.help h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 35px; }
+.help .hero {
+  font-size: 16pt;
+  line-height: 1.4; }
+.help .ways-to-help h4 {
+  margin-bottom: 15px;
+  margin-top: 5px; }
+.help .ways-to-help div {
+  text-align: left; }
+.help .ways-to-help .icon {
+  clear: both; }
+.help .sharing .button {
+  width: 100%;
+  background-position: 40px 50%;
+  margin-top: 0;
+  padding-top: 24px;
+  background-repeat: no-repeat;
+  font-weight: normal; }
+  .help .sharing .button:hover {
+    text-decoration: none; }
+.help .sharing .fb {
+  padding-left: 46px;
+  background-color: #4a67ae;
+  background-image: url(../images/facebook-icon.png); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .help .sharing .fb {
+      background-image: url(../images/facebook-icon@2x.png);
+      background-size: 18px 31px; } }
+  .help .sharing .fb:hover {
+    background-color: #3b528b; }
+.help .sharing .tw {
+  padding-left: 57px;
+  background-color: #30c4f1;
+  background-image: url(../images/twitter-icon.png); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .help .sharing .tw {
+      background-image: url(../images/twitter-icon@2x.png);
+      background-size: 29px 25px; } }
+  .help .sharing .tw:hover {
+    background-color: #269cc0; }
+.help .sharing .email {
+  padding-left: 57px;
+  background-color: #df4b38;
+  background-image: url(../images/envelope.png); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    .help .sharing .email {
+      background-image: url(../images/envelope@2x.png);
+      background-size: 37px 25px; } }
+  .help .sharing .email:hover {
+    background-color: #b23c2c; }
+.help .developers .android img {
+  position: relative;
+  top: -7px; }
+.help .developers .icon {
+  margin-bottom: 0; }
+.help .developers .apple img {
+  position: relative;
+  top: -3px;
+  left: 10px;
+  width: 84px;
+  height: 84px; }
+.help .developers .apple h4, .help .developers .apple p {
+  position: relative;
+  left: 15px; }
+
 @media screen and (max-width: 1020px) {
   .header-container {
     background-position: 55% center; }
@@ -1141,6 +1224,18 @@ p {
     font-size: 13pt;
     padding-left: 30px; }
   .social .wide br {
+    display: none; }
+
+  /*
+  	Help page for tablets
+  	- We remove icons in the social buttons and developer boxes		
+  */
+  .help .button {
+    background-image: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 13pt; }
+  .help .developers .icon {
     display: none; } }
 @media screen and (max-width: 930px) {
   .features .asection, .features .csection {
@@ -1380,7 +1475,45 @@ p {
       line-height: 24pt; }
 
   .share .button {
-    margin-top: 11px; } }
+    margin-top: 11px; }
+
+  /*
+  	Help page for narrower screens
+  	- We go on a single column layout
+  	- We decrease font sizes and margins/paddings
+  */
+  .help .narrow, .help .wide {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    .help .narrow:last-child, .help .wide:last-child {
+      margin-right: 0; }
+  .help h1 {
+    font-size: 21pt; }
+  .help h2 {
+    font-size: 15pt;
+    line-height: 1.5; }
+  .help h4 {
+    font-weight: normal; }
+  .help .hero {
+    font-size: 14pt; }
+  .help .button {
+    margin-bottom: 0; }
+  .help .donate {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .help .sharing h2 {
+    margin-top: 0; }
+  .help .developers h2 {
+    display: none; }
+  .help .developers .android {
+    padding-bottom: 0; }
+  .help .developers .apple {
+    padding-top: 0; }
+    .help .developers .apple h4, .help .developers .apple p {
+      left: 0; } }
 @media screen and (max-width: 480px) {
   .share {
     height: auto;

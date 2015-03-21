@@ -647,7 +647,7 @@ $menu-height: 70px;
 	}
 }
 
-.social {
+.social, .help {
 	margin-bottom: 40px;
 
 	.block {
@@ -773,6 +773,114 @@ $menu-height: 70px;
 	}
 }
 
+
+.help {
+	.narrow {
+		@include span-columns(4 of 12);
+		
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.wide {
+		padding-top: 35px;
+		height: auto;
+		min-height: 150px;
+	}
+
+	br {
+		display: inline-block;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 15px;
+		margin-top: 35px;
+	}
+
+	.hero {
+		font-size: 16pt;
+  		line-height: 1.4;
+	}
+
+	.ways-to-help {
+		h4 {
+			margin-bottom: 15px;
+			margin-top: 5px;
+		}
+		div {
+			text-align: left;
+		}
+		.icon {
+			clear: both;
+		}		
+	}
+
+	.sharing {
+		.button {
+			width: 100%;
+			background-position: 40px 50%;
+			margin-top: 0;
+			padding-top: 24px;
+			background-repeat: no-repeat;
+			font-weight: normal;
+			&:hover {
+			  	text-decoration: none;
+			}
+		}
+		.fb {
+			$bg: rgb(74, 103, 174);
+
+			padding-left: 18 + 2*14px;
+			background-color: $bg;
+			@include retina-image("facebook-icon", 18px 31px, png, "facebook-icon@2x");
+
+			&:hover { background-color: shade($bg, 20%); }
+		}
+		.tw {
+			$bg: rgb(48, 196, 241);
+			
+			padding-left: 29 + 2*14px;
+			background-color: $bg;
+			@include retina-image("twitter-icon", 29px 25px, png, "twitter-icon@2x");
+
+			&:hover { background-color: shade($bg, 20%); }
+		}
+		.email {
+			$bg: rgb(223, 75, 56);
+			
+			padding-left: 29 + 2*14px;
+			background-color: $bg;
+			@include retina-image("envelope", 37px 25px, png, "envelope@2x");
+
+			&:hover { background-color: shade($bg, 20%); }
+		}
+	}
+	.developers {
+		.android img {
+			position: relative;
+  			top: -7px;
+		}
+		.icon {
+			margin-bottom: 0;
+		}
+		.apple {
+			img {
+				position: relative;
+				top: -3px;
+				left: 10px;
+				width: 84px;
+				height: 84px;
+			}
+			h4, p {
+				position: relative;
+  				left: 15px;
+			}
+		}
+	}
+}
+
+
 @include media(max-width 1020px) {
 	.header-container {
 		background-position: 55% center;
@@ -807,6 +915,24 @@ $menu-height: 70px;
 			br {
 				display: none;
 			}
+		}
+	}
+
+	/*
+		Help page for tablets
+		- We remove icons in the social buttons and developer boxes		
+	*/
+	.help {
+		.button {
+			// remove social media icons for smaller screens
+			background-image: none !important;
+			padding-left: 0 !important;
+  			padding-right: 0 !important;
+  			font-size: 13pt;
+		}
+
+		.developers .icon {
+			display: none;
 		}
 	}
 }
@@ -1128,6 +1254,58 @@ $menu-height: 70px;
 		.button {
 			margin-top: 11px;
 		}
+	}
+
+	/*
+		Help page for narrower screens
+		- We go on a single column layout
+		- We decrease font sizes and margins/paddings
+	*/
+	.help {		
+		.narrow, .wide {
+			@include span-columns(12 of 12);
+			@include omega;
+		}
+		h1 {
+			font-size: 21pt;
+		}
+		h2 {
+  			font-size: 15pt;
+  			line-height: 1.5;
+		}
+		h4 {
+			font-weight: normal;
+		}
+		.hero {
+			font-size: 14pt;
+		}
+		.button {
+			margin-bottom: 0;
+		}
+		.donate {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		.sharing {
+			h2 {
+				margin-top: 0;
+			}
+		}
+		.developers {
+			h2 {
+				display: none;
+			}
+			.android {
+				padding-bottom: 0;
+			}
+			.apple {
+				padding-top: 0;
+				h4,p {
+					left: 0;
+				}
+			}
+		}
+		
 	}
 }
 
